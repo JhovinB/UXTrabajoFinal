@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0sp"
+    android:background=" #072146"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9C4C4C"
+            app:srcCompat="@android:drawable/ic_dialog_alert"
+            app:tint="#D1AB2A" />
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:padding="16sp"
+            android:text="Rango mínimo de 6 meses"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="16sp"
+        android:text="Monto de ahorro:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MontoProyeccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+
+        android:textColor="#85F3FD"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="16sp"
+        android:text="Fecha de inicio:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/FechaInicio"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+
+            android:textColor="#85F3FD" />
+
+        <ImageButton
+            android:id="@+id/Fecha_Inicio"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="16sp"
+        android:text="Fecha de fin:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/FechaFin"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+
+            android:textColor="#85F3FD" />
+
+        <ImageButton
+            android:id="@+id/Fecha_Fin"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="16sp"
+        android:text="Monto disponible:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MontoDisponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#85F3FD" />
+
+    <TextView
+        android:id="@+id/tipsPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:gravity="right"
+        android:padding="16sp"
+        android:text="Tips"
+        android:textColor="#5BD1EF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#85F3FD" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="59dp" >
+        <Button
+            android:id="@+id/button_atras"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="Atrás" />
+
+        <Button
+            android:id="@+id/button_inicio"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Borrar" />
+
+        <Button
+            android:id="@+id/button_calcular"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular" />
+    </TableRow>
+
+
+</LinearLayout>

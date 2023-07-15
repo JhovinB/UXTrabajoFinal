@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00BCD4"
+    tools:context=".PopUpTips">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Recorta gastos"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Diviertete sin gastar"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Invierte tu dinero"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Ten una alcancia para los vueltos"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Piensa en objetivos que puedas alcanzar"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
